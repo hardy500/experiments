@@ -1,0 +1,83 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CatDogDataset	dogvcat/data_prep/v0.py	/^class CatDogDataset(Dataset):$/;"	c
+DataLoader	dogvcat/data_prep/v0.py	/^from torch.utils.data import Dataset, DataLoader$/;"	i
+Dataset	dogvcat/data_prep/v0.py	/^from torch.utils.data import Dataset, DataLoader$/;"	i
+Image	dogvcat/data_prep/v0.py	/^from PIL import Image$/;"	i
+LambdaLR	dogvcat/engine/v0.py	/^from torch.optim.lr_scheduler import LambdaLR$/;"	i
+Normalize	dogvcat/engine/v0.py	/^from torchvision.transforms import Normalize$/;"	i
+StepByStep	dogvcat/engine/v0.py	/^class StepByStep:$/;"	c
+SummaryWriter	dogvcat/engine/v0.py	/^from torch.utils.tensorboard import SummaryWriter$/;"	i
+TensorDataset	dogvcat/data_prep/v0.py	/^from torch.utils.data import TensorDataset$/;"	i
+__getitem__	dogvcat/data_prep/v0.py	/^  def __getitem__(self, idx):$/;"	m	class:CatDogDataset	file:
+__init__	dogvcat/data_prep/v0.py	/^  def __init__(self, img_paths, transform):$/;"	m	class:CatDogDataset
+__init__	dogvcat/engine/v0.py	/^  def __init__(self, model, loss_fn, optimizer):$/;"	m	class:StepByStep
+__len__	dogvcat/data_prep/v0.py	/^  def __len__(self):$/;"	m	class:CatDogDataset	file:
+_epoch_schedulers	dogvcat/engine/v0.py	/^  def _epoch_schedulers(self, val_loss):$/;"	m	class:StepByStep
+_make_train_step_fn	dogvcat/engine/v0.py	/^  def _make_train_step_fn(self):$/;"	m	class:StepByStep
+_make_val_step_fn	dogvcat/engine/v0.py	/^  def _make_val_step_fn(self):$/;"	m	class:StepByStep
+_mini_batch	dogvcat/engine/v0.py	/^  def _mini_batch(self, validation=False):$/;"	m	class:StepByStep
+_mini_batch_schedulers	dogvcat/engine/v0.py	/^  def _mini_batch_schedulers(self, frac_epoch):$/;"	m	class:StepByStep
+_visualize_tensors	dogvcat/engine/v0.py	/^  def _visualize_tensors(axs, x, y=None, yhat=None, layer_name='', title=None):$/;"	m	class:StepByStep
+add_graph	dogvcat/engine/v0.py	/^  def add_graph(self):$/;"	m	class:StepByStep
+attach_hooks	dogvcat/engine/v0.py	/^  def attach_hooks(self, layers_to_hook, hook_fn=None):$/;"	m	class:StepByStep
+capture_gradients	dogvcat/engine/v0.py	/^  def capture_gradients(self, layers_to_hook):$/;"	m	class:StepByStep
+capture_parameters	dogvcat/engine/v0.py	/^  def capture_parameters(self, layers_to_hook):$/;"	m	class:StepByStep
+correct	dogvcat/engine/v0.py	/^  def correct(self, x, y, threshold=.5):$/;"	m	class:StepByStep
+count_parameters	dogvcat/engine/v0.py	/^  def count_parameters(self):$/;"	m	class:StepByStep
+datetime	dogvcat/engine/v0.py	/^import datetime$/;"	i
+deepcopy	dogvcat/engine/v0.py	/^from copy import deepcopy$/;"	i
+fw_hook_fn	dogvcat/engine/v0.py	/^   def fw_hook_fn(layer, inputs, outputs):$/;"	f	function:StepByStep.capture_parameters
+get_data	dogvcat/data_prep/v0.py	/^def get_data():$/;"	f
+grades	data_science/module1/assignment1.py	/^def grades(regex=False):$/;"	f
+hook_fn	dogvcat/engine/v0.py	/^      def hook_fn(layer, inputs, outputs):$/;"	f	function:StepByStep.attach_hooks
+load_checkpoint	dogvcat/engine/v0.py	/^  def load_checkpoint(self, filename):$/;"	m	class:StepByStep
+loader_apply	dogvcat/engine/v0.py	/^  def loader_apply(loader, func, reduce='sum'):$/;"	m	class:StepByStep
+log_fn	dogvcat/engine/v0.py	/^     def log_fn(grad):$/;"	f	function:StepByStep.capture_gradients.make_log_fn
+logs	data_science/module1/assignment1.py	/^def logs():$/;"	f
+lr_fn	dogvcat/engine/v0.py	/^    def lr_fn(iteration):$/;"	f	function:make_lr_fn
+lr_range_test	dogvcat/engine/v0.py	/^  def lr_range_test(self, data_loader, end_lr, num_iter=100, step_mode='exp', alpha=0.05, ax=None):$/;"	m	class:StepByStep
+make_log_fn	dogvcat/engine/v0.py	/^   def make_log_fn(name, parm_id):$/;"	f	function:StepByStep.capture_gradients
+make_lr_fn	dogvcat/engine/v0.py	/^def make_lr_fn(start_lr, end_lr, num_iter, step_mode='exp'):$/;"	f
+make_normalizer	dogvcat/engine/v0.py	/^  def make_normalizer(loader):$/;"	m	class:StepByStep
+matplotlib	dogvcat/engine/v0.py	/^import matplotlib.pyplot as plt$/;"	i
+model	dogvcat/model_config/v0.py	/^model = resnet18(weights=weights)$/;"	v
+names	data_science/module1/assignment1.py	/^def names(regex=False):$/;"	f
+nn	dogvcat/engine/v0.py	/^from torch import nn, optim$/;"	i
+nn	dogvcat/model_config/v0.py	/^from torch import nn, optim$/;"	i
+np	dogvcat/engine/v0.py	/^import numpy as np$/;"	i
+optim	dogvcat/engine/v0.py	/^from torch import nn, optim$/;"	i
+optim	dogvcat/model_config/v0.py	/^from torch import nn, optim$/;"	i
+os	dogvcat/data_prep/v0.py	/^import os$/;"	i
+pd	data_science/module1/assignment1.py	/^import pandas as pd$/;"	i
+perform_train_step_fn	dogvcat/engine/v0.py	/^    def perform_train_step_fn(x, y):$/;"	f	function:StepByStep._make_train_step_fn
+perform_val_step_fn	dogvcat/engine/v0.py	/^    def perform_val_step_fn(x, y):$/;"	f	function:StepByStep._make_val_step_fn
+plot_losses	dogvcat/engine/v0.py	/^  def plot_losses(self):$/;"	m	class:StepByStep
+plt	dogvcat/engine/v0.py	/^import matplotlib.pyplot as plt$/;"	i
+predict	dogvcat/engine/v0.py	/^  def predict(self, x):$/;"	m	class:StepByStep
+preprocessed_dataset	dogvcat/data_prep/v0.py	/^def preprocessed_dataset(model, loader, device=None):$/;"	f
+random	dogvcat/data_prep/v0.py	/^import random$/;"	i
+random	dogvcat/engine/v0.py	/^import random$/;"	i
+re	data_science/module1/assignment1.py	/^import re$/;"	i
+remove_hooks	dogvcat/engine/v0.py	/^  def remove_hooks(self):$/;"	m	class:StepByStep
+resnet18	dogvcat/model_config/v0.py	/^from torchvision.models import resnet18$/;"	i
+save_checkpoint	dogvcat/engine/v0.py	/^  def save_checkpoint(self, filename):$/;"	m	class:StepByStep
+set_loaders	dogvcat/engine/v0.py	/^  def set_loaders(self, train_loader, val_loader=None):$/;"	m	class:StepByStep
+set_lr_scheduler	dogvcat/engine/v0.py	/^  def set_lr_scheduler(self, scheduler):$/;"	m	class:StepByStep
+set_optimizer	dogvcat/engine/v0.py	/^  def set_optimizer(self, optimizer):$/;"	m	class:StepByStep
+set_seed	dogvcat/engine/v0.py	/^  def set_seed(self, seed=42):$/;"	m	class:StepByStep
+set_tensorboard	dogvcat/engine/v0.py	/^  def set_tensorboard(self, name, folder='runs'):$/;"	m	class:StepByStep
+statistic_per_channel	dogvcat/engine/v0.py	/^  def statistic_per_channel(images, labels):$/;"	m	class:StepByStep
+to	dogvcat/engine/v0.py	/^  def to(self, device):$/;"	m	class:StepByStep
+torch	dogvcat/data_prep/v0.py	/^import torch$/;"	i
+torch	dogvcat/engine/v0.py	/^import torch$/;"	i
+torchvision	dogvcat/model_config/v0.py	/^import torchvision$/;"	i
+train	dogvcat/engine/v0.py	/^  def train(self, n_epochs, seed=42):$/;"	m	class:StepByStep
+transforms	dogvcat/data_prep/v0.py	/^from torchvision import transforms$/;"	i
+visualize_filters	dogvcat/engine/v0.py	/^  def visualize_filters(self, layer_name, **kwargs):$/;"	m	class:StepByStep
+visualize_outputs	dogvcat/engine/v0.py	/^  def visualize_outputs(self, layers, n_images=10, y=None, yhat=None):$/;"	m	class:StepByStep
+weights	dogvcat/model_config/v0.py	/^weights = torchvision.models.ResNet18_Weights.DEFAULT$/;"	v
