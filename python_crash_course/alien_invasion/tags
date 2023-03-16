@@ -1,0 +1,26 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AlienInvasion	alien_invasion.py	/^class AlienInvasion:$/;"	c
+Settings	alien_invasion.py	/^from settings import Settings$/;"	i
+Settings	settings.py	/^class Settings:$/;"	c
+Ship	alien_invasion.py	/^from ship import Ship$/;"	i
+Ship	ship.py	/^class Ship:$/;"	c
+__init__	alien_invasion.py	/^  def __init__(self):$/;"	m	class:AlienInvasion
+__init__	ship.py	/^  def __init__(self, game):$/;"	m	class:Ship
+_check_event	alien_invasion.py	/^  def _check_event(self):$/;"	m	class:AlienInvasion
+_check_keydown_events	alien_invasion.py	/^  def _check_keydown_events(self, event):$/;"	m	class:AlienInvasion
+_check_keyup_events	alien_invasion.py	/^  def _check_keyup_events(self, event):$/;"	m	class:AlienInvasion
+_update_screen	alien_invasion.py	/^  def _update_screen(self):$/;"	m	class:AlienInvasion
+ai	alien_invasion.py	/^  ai = AlienInvasion()$/;"	v
+dataclass	settings.py	/^from dataclasses import dataclass$/;"	i
+draw	ship.py	/^  def draw(self):$/;"	m	class:Ship
+exit	alien_invasion.py	/^from sys import exit$/;"	i
+exit	ship.py	/^from sys import exit$/;"	i
+pygame	alien_invasion.py	/^import pygame$/;"	i
+pygame	ship.py	/^import pygame$/;"	i
+run	alien_invasion.py	/^  def run(self):$/;"	m	class:AlienInvasion
+update	ship.py	/^  def update(self):$/;"	m	class:Ship
