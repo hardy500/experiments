@@ -2,55 +2,37 @@
 <html>
   <head>
     <title> Toto Careers </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <style>
-      h1 {
-        font-size: 40px;
-        font-family: Roboto;
-        font-weight: normal;
-        color: rgb(100, 100, 100);
-        text-align: center;
-      }
-
-      h2 {
-        font-family: Roboto;
-        color: rgb(180, 180, 100);
-        text-align: center;
-      }
-
-      .bodytext {
-        font-family: rosybrown;
-        text-align: center;
-        color: rgb(80, 90, 90);
-      }
-
-      #container {
-        max-width: 720px;
-        margin: 0 auto 0 auto;
+      #banner {
+        height: 620px;
+        width: 100%;
+        object-fit: cover;
       }
     </style>
+
   </head>
   <body>
-    <div id="container">
-      <h1> Toto Careers </h1>
-      <img src="http://localhost:5000/static/banner.jpeg" width="720" height="500" alt="HTML Dog">
+    <div class="container">
+      <h1 class="text-center mt-2 mb-4"> Toto Careers </h1>
+      <img class="img-fluid" id="banner" src="http://localhost:5000/static/banner.jpeg" >
 
-      <h2> About Toto </h2>
-      <p class="bodytext">
-        AAAAAAA AAAAAAA AAAAAAA AAAAAAA AAAAAAA
-        AAAAAAA AAAAAAA AAAAAAA AAAAAAA AAAAAAA
-        AAAAAAA AAAAAAA AAAAAAA AAAAAAA AAAAAAA
-        AAAAAAA AAAAAAA AAAAAAA AAAAAAA AAAAAAA
-        AAAAAAA AAAAAAA AAAAAAA AAAAAAA AAAAAAA
-        AAAAAAA AAAAAAA AAAAAAA AAAAAAA AAAAAAA
+      <h2 class="text-center mt-2 mb-4"> About Toto </h2>
+      <p class="lead">
+        Learn how to develop Dynamic Database-Driven Web Apps with Python, Flask, and MySQL. This course is broken up into two parts. In part one, you will learn how to build and deploy a site using the Flask Python web framework. In part two, you will connect the Flask application from the first part to a cloud MySQL database and learn how to deploy a production-ready database-driven web application.
       </p>
 
-      <h2> Open Positions </h2>
-      <p class="bodytext">
+      <h2 class="text-center mt-2 mb-4">
+        Open Positions
+      </h2>
+      <p>
         TODO -- Show the jobs here
       </p>
-      <div style="text-align: center;">
-        <button>Contact US</button>
-        <p>
+      <div class="text-center">
+        <button class="btn btn-primary btn-lg">Contact US</button>
+        <p class="mt-4">
           Copyright 2022, Toto
         </p>
       </div>
