@@ -10,14 +10,16 @@
         height: 620px;
         width: 100%;
         object-fit: cover;
+        margin-bottom: 16px;
       }
     </style>
 
   </head>
   <body>
+    {% include 'nav.html' %}
+    <img class="img-fluid" id="banner" src="http://localhost:5000/static/banner.jpeg" >
     <div class="container">
       <h1 class="text-center mt-2 mb-4"> {{company_name}} Careers </h1>
-      <img class="img-fluid" id="banner" src="http://localhost:5000/static/banner.jpeg" >
 
       <h2 class="text-center mt-2 mb-4"> About {{company_name}} </h2>
       <p class="lead">
@@ -35,11 +37,12 @@
         </div>
       </p>
       <div class="text-center">
-        <button class="btn btn-primary btn-lg">Contact US</button>
-        <p class="mt-4">
-          Copyright 2022, Toto
-        </p>
+        <a
+          class="btn btn-primary btn-lg"
+          href="mailto:http://localhost:5000/#?subject=Questions">Contact US
+        </a>
       </div>
     </div>
+    {% include 'footer.html'%}
   </body>
 </html>
