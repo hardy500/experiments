@@ -16,10 +16,10 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="text-center mt-2 mb-4"> Toto Careers </h1>
+      <h1 class="text-center mt-2 mb-4"> {{company_name}} Careers </h1>
       <img class="img-fluid" id="banner" src="http://localhost:5000/static/banner.jpeg" >
 
-      <h2 class="text-center mt-2 mb-4"> About Toto </h2>
+      <h2 class="text-center mt-2 mb-4"> About {{company_name}} </h2>
       <p class="lead">
         Learn how to develop Dynamic Database-Driven Web Apps with Python, Flask, and MySQL. This course is broken up into two parts. In part one, you will learn how to build and deploy a site using the Flask Python web framework. In part two, you will connect the Flask application from the first part to a cloud MySQL database and learn how to deploy a production-ready database-driven web application.
       </p>
@@ -28,7 +28,11 @@
         Open Positions
       </h2>
       <p>
-        TODO -- Show the jobs here
+        <div>
+          {% for job in jobs %}
+            {% include 'jobitem.html' %}
+          {% endfor %}
+        </div>
       </p>
       <div class="text-center">
         <button class="btn btn-primary btn-lg">Contact US</button>
